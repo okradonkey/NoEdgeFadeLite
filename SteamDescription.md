@@ -6,8 +6,8 @@ If you want ALL terrain borders (except natural shorelines) to be crisp,
 check out the original [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2027252699]No Edge Fade[/url] mod.
 
 [h1]Compatibility[/h1]
-- Compatible with RimWorld **1.0**, **v1.1**, and the **Royalty** DLC.
-- No game-breaking incompatibilities, BUT...
+- Compatible with RimWorld v1.0, v1.1, and the Royalty DLC.
+- No game-breaking incompatibilities, [b]BUT...[/b]
 
 This mod drastically re-orders the rendering precedence of terrains.
 Floors and terrains added by other mods will probably not match this new
