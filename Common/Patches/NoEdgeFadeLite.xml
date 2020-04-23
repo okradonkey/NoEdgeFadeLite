@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Patch - OkraDonkey.NoEdgeFadeLite ========== -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Floors.xml -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Floors_Burned.xml -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Floors_StoneTile.xml -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Natural.xml -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Road.xml -->
+    <!-- Targeting Core\Defs\TerrainDefs\Terrain_Water.xml -->
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+
+            <!-- change renderPrecendence: generally, render man-made floors above natural terrains -->
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BurnedWoodPlankFloor"]/renderPrecedence</xpath>    <value><renderPrecedence>391</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoodPlankFloor"]/renderPrecedence</xpath>          <value><renderPrecedence>390</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SterileTile"]/renderPrecedence</xpath>             <value><renderPrecedence>383</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "GoldTile"]/renderPrecedence</xpath>                <value><renderPrecedence>382</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SilverTile"]/renderPrecedence</xpath>              <value><renderPrecedence>381</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "MetalTile"]/renderPrecedence</xpath>               <value><renderPrecedence>380</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "PavedTile"]/renderPrecedence</xpath>               <value><renderPrecedence>370</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "FlagstoneBase"]/renderPrecedence</xpath>             <value><renderPrecedence>360</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "TileStoneBase"]/renderPrecedence</xpath>             <value><renderPrecedence>360</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Concrete"]/renderPrecedence</xpath>                <value><renderPrecedence>355</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BurnedCarpet"]/renderPrecedence</xpath>            <value><renderPrecedence>340</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetRed"]/renderPrecedence</xpath>               <value><renderPrecedence>339</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetGreen"]/renderPrecedence</xpath>             <value><renderPrecedence>338</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetBlue"]/renderPrecedence</xpath>              <value><renderPrecedence>337</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetCream"]/renderPrecedence</xpath>             <value><renderPrecedence>336</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetDark"]/renderPrecedence</xpath>              <value><renderPrecedence>335</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterMovingChestDeep"]/renderPrecedence</xpath>    <value><renderPrecedence>299</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterMovingShallow"]/renderPrecedence</xpath>      <value><renderPrecedence>298</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterOceanDeep"]/renderPrecedence</xpath>          <value><renderPrecedence>297</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterOceanShallow"]/renderPrecedence</xpath>       <value><renderPrecedence>296</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterDeep"]/renderPrecedence</xpath>               <value><renderPrecedence>295</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WaterShallow"]/renderPrecedence</xpath>            <value><renderPrecedence>294</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BrokenAsphalt"]/renderPrecedence</xpath>           <value><renderPrecedence>270</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "PackedDirt"]/renderPrecedence</xpath>              <value><renderPrecedence>260</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoftSand"]/renderPrecedence</xpath>                <value><renderPrecedence>252</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Ice"]/renderPrecedence</xpath>                     <value><renderPrecedence>250</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Sand"]/renderPrecedence</xpath>                    <value><renderPrecedence>250</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Soil"]/renderPrecedence</xpath>                    <value><renderPrecedence>240</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "MarshyTerrain"]/renderPrecedence</xpath>           <value><renderPrecedence>237</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoilRich"]/renderPrecedence</xpath>                <value><renderPrecedence>235</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Mud"]/renderPrecedence</xpath>                     <value><renderPrecedence>230</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Marsh"]/renderPrecedence</xpath>                   <value><renderPrecedence>225</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Gravel"]/renderPrecedence</xpath>                  <value><renderPrecedence>220</renderPrecedence></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "MossyTerrain"]/renderPrecedence</xpath>            <value><renderPrecedence>215</renderPrecedence></value></li>
+
+            <!-- change edgeType to Hard to match the new look -->
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BurnedWoodPlankFloor"]/edgeType</xpath><value><edgeType>Hard</edgeType></value></li>
+            <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BurnedCarpet"]/edgeType</xpath><value><edgeType>Hard</edgeType></value></li>
+
+        </operations>
+    </Operation>
+
+    <!-- ========== Patch for the original [RF] Fertile Fields [1.0] ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Fertile Fields [1.0]</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BrickFloor"]/renderPrecedence</xpath>              <value><renderPrecedence>355</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "HBBrickFloor"]/renderPrecedence</xpath>            <value><renderPrecedence>355</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Topsoil"]/renderPrecedence</xpath>                 <value><renderPrecedence>240</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "DirtFert"]/renderPrecedence</xpath>                <value><renderPrecedence>235</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoilTilled"]/renderPrecedence</xpath>              <value><renderPrecedence>233</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "RockySoil"]/renderPrecedence</xpath>               <value><renderPrecedence>220</renderPrecedence></value></li>
+
+            </operations>
+		</match>
+	</Operation>
+
+    <!-- ========== Patch for jamaicancastle.RF.fertilefields ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fertile Fields [1.1]</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BrickFloor"]/renderPrecedence</xpath>              <value><renderPrecedence>355</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "HBBrickFloor"]/renderPrecedence</xpath>            <value><renderPrecedence>355</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Topsoil"]/renderPrecedence</xpath>                 <value><renderPrecedence>240</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "DirtFert"]/renderPrecedence</xpath>                <value><renderPrecedence>235</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoilTilled"]/renderPrecedence</xpath>              <value><renderPrecedence>233</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "TrenchDeep"]/renderPrecedence</xpath>              <value><renderPrecedence>228</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "TrenchMuddy"]/renderPrecedence</xpath>             <value><renderPrecedence>226</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "TrenchShallow"]/renderPrecedence</xpath>           <value><renderPrecedence>225</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "RockySoil"]/renderPrecedence</xpath>               <value><renderPrecedence>220</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "SoilWorn"]/renderPrecedence</xpath>                <value><renderPrecedence>200</renderPrecedence></value></li>
+
+            </operations>
+		</match>
+	</Operation>
+
+    <!-- ========== Patch for Telkir.TMods.MoreFloors ========== -->
+    <!-- Includes patch of abstract FloorBaseStone for floors added by MoreFloors patches -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[T] MoreFloors</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <!-- Revert these PatchOperationAdd to the following PatchOperationReplace when MoreFloors updates -->
+                <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorPlasteel"]</xpath>           <value><renderPrecedence>385</renderPrecedence></value></li>
+                <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorJade"]</xpath>               <value><renderPrecedence>384</renderPrecedence></value></li>
+                <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[@Name = "FloorBaseStone"]</xpath>            <value><renderPrecedence>368</renderPrecedence></value></li>
+                <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorPlasteel"]/renderPrecedence</xpath>           <value><renderPrecedence>385</renderPrecedence></value></li> -->
+                <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorJade"]/renderPrecedence</xpath>               <value><renderPrecedence>384</renderPrecedence></value></li> -->
+                <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "FloorBaseStone"]/renderPrecedence</xpath>            <value><renderPrecedence>368</renderPrecedence></value></li> -->
+
+                <!-- This next line is a special case, will probably be removed in next MoreFloors update -->
+                <li Class="PatchOperationRemove"><xpath>Defs/TerrainDef[defName = "FloorStoneMosaicSandstone"]/renderPrecedence</xpath></li>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodRustic"]/renderPrecedence</xpath>         <value><renderPrecedence>350</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodWide"]/renderPrecedence</xpath>           <value><renderPrecedence>349</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodLight"]/renderPrecedence</xpath>          <value><renderPrecedence>348</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodMosaic"]/renderPrecedence</xpath>         <value><renderPrecedence>347</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodVertical"]/renderPrecedence</xpath>       <value><renderPrecedence>346</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodBarn"]/renderPrecedence</xpath>           <value><renderPrecedence>345</renderPrecedence></value></li>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetOrange"]/renderPrecedence</xpath>            <value><renderPrecedence>334</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetYellow"]/renderPrecedence</xpath>            <value><renderPrecedence>333</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetTurquoise"]/renderPrecedence</xpath>         <value><renderPrecedence>332</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetPurple"]/renderPrecedence</xpath>            <value><renderPrecedence>331</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetWhite"]/renderPrecedence</xpath>             <value><renderPrecedence>330</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetBlack"]/renderPrecedence</xpath>             <value><renderPrecedence>329</renderPrecedence></value></li>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetRed"]/renderPrecedence</xpath>          <value><renderPrecedence>328</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetOrange"]/renderPrecedence</xpath>       <value><renderPrecedence>327</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetYellow"]/renderPrecedence</xpath>       <value><renderPrecedence>326</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetCream"]/renderPrecedence</xpath>        <value><renderPrecedence>325</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetGreen"]/renderPrecedence</xpath>        <value><renderPrecedence>324</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetTurquoise"]/renderPrecedence</xpath>    <value><renderPrecedence>323</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetBlue"]/renderPrecedence</xpath>         <value><renderPrecedence>322</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetPurple"]/renderPrecedence</xpath>       <value><renderPrecedence>321</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetWhite"]/renderPrecedence</xpath>        <value><renderPrecedence>320</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetDark"]/renderPrecedence</xpath>         <value><renderPrecedence>319</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CheckCarpetBlack"]/renderPrecedence</xpath>        <value><renderPrecedence>318</renderPrecedence></value></li>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetRed"]/renderPrecedence</xpath>           <value><renderPrecedence>317</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetOrange"]/renderPrecedence</xpath>        <value><renderPrecedence>316</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetYellow"]/renderPrecedence</xpath>        <value><renderPrecedence>315</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetCream"]/renderPrecedence</xpath>         <value><renderPrecedence>314</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetGreen"]/renderPrecedence</xpath>         <value><renderPrecedence>313</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetTurquoise"]/renderPrecedence</xpath>     <value><renderPrecedence>312</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetBlue"]/renderPrecedence</xpath>          <value><renderPrecedence>311</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetPurple"]/renderPrecedence</xpath>        <value><renderPrecedence>310</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetWhite"]/renderPrecedence</xpath>         <value><renderPrecedence>309</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetDark"]/renderPrecedence</xpath>          <value><renderPrecedence>308</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WoolCarpetBlack"]/renderPrecedence</xpath>         <value><renderPrecedence>307</renderPrecedence></value></li>
+
+                <!-- Revert these PatchOperationAdd to the following PatchOperationReplace when MoreFloors updates -->
+                <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "BurnedStrawFloor"]</xpath>        <value><renderPrecedence>255</renderPrecedence></value></li>
+                <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorStraw"]</xpath>              <value><renderPrecedence>254</renderPrecedence></value></li>
+                <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "BurnedStrawFloor"]/renderPrecedence</xpath>        <value><renderPrecedence>255</renderPrecedence></value></li> -->
+                <!-- <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorStraw"]/renderPrecedence</xpath>              <value><renderPrecedence>254</renderPrecedence></value></li> -->
+
+                <!-- change edgeType to Hard to match the new look -->
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodBarn"]/edgeType</xpath><value><edgeType>Hard</edgeType></value></li>
+
+            </operations>
+		</match>
+	</Operation>
+
+    <!-- ========== Patch for RadZerp.naturalPaths ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Natural Paths</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "pathBase"]/renderPrecedence</xpath>                  <value><renderPrecedence>250</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "gravelPath"]/renderPrecedence</xpath>              <value><renderPrecedence>251</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "gravelPathLight"]/renderPrecedence</xpath>         <value><renderPrecedence>251</renderPrecedence></value></li>
+                <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "sandPath"]/renderPrecedence</xpath>                <value><renderPrecedence>249</renderPrecedence></value></li>
+
+            </operations>
+		</match>
+	</Operation>
+
+    <!-- ========== Patch for fluffy.stuffedfloors ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Stuffed Floors</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/StuffedFloors.FloorTypeDef[@Name = "StuffedFloorsBase"]/renderPrecedence</xpath>                       <value><renderPrecedence>301</renderPrecedence></value>
+                </li>
+
+            </operations>
+		</match>
+	</Operation>
+
+    <!-- ========== Patch for FrozenSnowFox.CarpetsoftheRainbow ========== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[FSF] Carpets of the Rainbow</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <li Class="PatchOperationReplace"><xpath>/Defs/TerrainDef[@ParentName = "FSFCarpetBase"]/renderPrecedence</xpath>      <value><renderPrecedence>300</renderPrecedence></value></li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

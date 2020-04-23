@@ -1,6 +1,13 @@
-# No Edge Fade - Lite
-A RimWorld mod:
-
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>No Edge Fade - Lite</name>
+    <author>OkraDonkey</author>
+    <packageId>OkraDonkey.NoEdgeFadeLite</packageId>
+    <supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+    <description>
 Man-made tiles no longer fade out when bordering other terrain types -
 instead, they will have distinct, crisp edges.  Borders between two
 natural terrains will still be faded.
@@ -8,9 +15,9 @@ natural terrains will still be faded.
 If you want ALL terrain borders (except natural shorelines) to be crisp,
 check out the original No Edge Fade mod.
 
-### Compatibility
-- Compatible with RimWorld **v1.0**, **v1.1**, and the **Royalty** DLC.
-- No game-breaking incompatibilities, **BUT...**
+### Compatibility 
+- Compatible with RimWorld v1.0, v1.1, and the Royalty DLC. 
+- No game-breaking incompatibilities, BUT...
 
 This mod drastically re-orders the rendering precedence of terrains.
 Floors and terrains added by other mods will probably not match this new
@@ -37,13 +44,9 @@ modified by XML.  As a result, they may have some faded borders.
 - Can be placed anywhere in the mod list.
 - Doesn't add or remove anything - it just changes the renderPrecedence
   and edgeType of terrains.
-
-# Installation
-Add _No Edge Fade - Lite_ anywhere in your load order.
-- Subscribe at the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2048191451)
-
- _or_
-
-- Download the latest zip file from [Latest Release](https://github.com/okradonkey/NoEdgeFadeLite/releases)
-- Unzip the contents and place them in your RimWorld/Mods folder.
-- Activate the mod in the mod menu in the game.
+    </description>
+    <url>https://github.com/okradonkey/NoEdgeFadeLite</url>
+    <incompatibleWith>
+        <li>OkraDonkey.NoEdgeFade</li>
+    </incompatibleWith>
+</ModMetaData>
