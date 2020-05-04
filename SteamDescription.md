@@ -18,12 +18,15 @@ Good news, though: This mod can be easily updated to fix these issues.
 Please feel free to make a compatibility request for any mods you like.
 
 [h1]Compatibile with floors and terrains from:[/h1]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543195228]Caution Tiles [1.0+][/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2012735237]Fertile Fields [1.1][/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543196802]Floored [1.0+][/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543195051]Floored - Yellow and Striped Tiles Only [1.0+][/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2008833499]Natural Paths[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=853043503]Stuffed Floors[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=893156099][FSF] Carpets of the Rainbow[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539311500][RF] Fertile Fields [1.0][/url]
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543561093][T] MoreFloors[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543561093][T] MoreFloors[/url] 
 
 [h1]Known Issues[/h1]
 Rough, hewn, and smooth stone floors are hard-coded and can't be
