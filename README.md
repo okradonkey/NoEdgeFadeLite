@@ -26,6 +26,7 @@ Please feel free to make a compatibility request for any mods you like.
 - Floored [1.0+]
 - Floored - Yellow and Striped Tiles Only [1.0+]
 - Natural Paths
+- Project RimFactory Revived
 - Stuffed Floors
 - [FSF] Carpets of the Rainbow
 - [RF] Fertile Fields [1.0]

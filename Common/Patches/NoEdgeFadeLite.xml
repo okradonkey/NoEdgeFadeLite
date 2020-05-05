@@ -296,4 +296,20 @@
     </match>
   </Operation>
 
+  <!-- ========== Patch for spdskatr.projectrimfactory ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Project RimFactory Revived</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "StripedTile"]/renderPrecedence</xpath>             <value><renderPrecedence>380</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "StripedTileLeft"]/renderPrecedence</xpath>         <value><renderPrecedence>380</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>

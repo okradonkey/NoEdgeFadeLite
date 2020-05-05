@@ -4,9 +4,9 @@
     <author>OkraDonkey</author>
     <packageId>OkraDonkey.NoEdgeFadeLite</packageId>
     <supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-	</supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+    </supportedVersions>
     <description>
 Man-made tiles no longer fade out when bordering other terrain types -
 instead, they will have distinct, crisp edges.  Borders between two
@@ -33,6 +33,7 @@ Please feel free to make a compatibility request for any mods you like.
 - Floored [1.0+]
 - Floored - Yellow and Striped Tiles Only [1.0+]
 - Natural Paths
+- Project RimFactory Revived
 - Stuffed Floors
 - [FSF] Carpets of the Rainbow
 - [RF] Fertile Fields [1.0]
