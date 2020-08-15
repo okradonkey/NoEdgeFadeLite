@@ -28,6 +28,7 @@ Please feel free to make a compatibility request for any mods you like.
 - Natural Paths
 - Project RimFactory Revived
 - Stuffed Floors
+- VGP Garden Tools
 - [FSF] Carpets of the Rainbow
 - [RF] Fertile Fields [1.0]
 - [T] MoreFloors

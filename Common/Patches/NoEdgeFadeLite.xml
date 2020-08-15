@@ -312,4 +312,26 @@
     </match>
   </Operation>
 
+  <!-- ========== Patch for dismarzero.VGP.VGPGardenTools ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>VGP Garden Tools</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "VG_PlaceSoil" or
+          defName = "VG_ReclaimSoil" or
+          defName = "VG_ReclaimMud" or
+          defName = "VG_ReclaimWater" or
+          defName = "VG_GardenSoil" or
+          defName = "VG_PlowSoil"
+          ]/renderPrecedence</xpath><value><renderPrecedence>235</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>

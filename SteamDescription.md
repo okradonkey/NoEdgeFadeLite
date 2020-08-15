@@ -25,6 +25,7 @@ Please feel free to make a compatibility request for any mods you like.
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2008833499]Natural Paths[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700]Project RimFactory Revived[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=853043503]Stuffed Floors[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007063961]VGP Garden Tools[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=893156099][FSF] Carpets of the Rainbow[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539311500][RF] Fertile Fields [1.0][/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543561093][T] MoreFloors[/url] 
