@@ -110,24 +110,24 @@
       <success>Always</success>
       <operations>
 
-        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[@Name = "TFloorBaseGemstone"]/renderPrecedence</xpath>          <value><renderPrecedence>384</renderPrecedence></value></li>
-        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[@Name = "FloorBaseStone"]/renderPrecedence</xpath>              <value><renderPrecedence>368</renderPrecedence></value></li>
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[@Name = "TFloorBaseGemstone"]</xpath>                           <value><renderPrecedence>384</renderPrecedence></value></li>
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[@Name = "FloorBaseStone"]</xpath>                               <value><renderPrecedence>368</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "TFloorBaseCarpet"]/renderPrecedence</xpath>        <value><renderPrecedence>334</renderPrecedence></value></li>
 
         <li Class="PatchOperationRemove"><xpath>Defs/TerrainDef[defName = "FloorStoneMosaicSandstone"]/renderPrecedence</xpath></li>
 
-        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorPlasteel"]/renderPrecedence</xpath>             <value><renderPrecedence>385</renderPrecedence></value></li>
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorPlasteel"]</xpath>                              <value><renderPrecedence>385</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodRustic"]/renderPrecedence</xpath>       <value><renderPrecedence>350</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodWide"]/renderPrecedence</xpath>         <value><renderPrecedence>349</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodLight"]/renderPrecedence</xpath>        <value><renderPrecedence>348</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodMosaic"]/renderPrecedence</xpath>       <value><renderPrecedence>347</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodVertical"]/renderPrecedence</xpath>     <value><renderPrecedence>346</renderPrecedence></value></li>
         <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodBarn"]/renderPrecedence</xpath>         <value><renderPrecedence>345</renderPrecedence></value></li>
-        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "BurnedStrawFloor"]/renderPrecedence</xpath>          <value><renderPrecedence>255</renderPrecedence></value></li>
-        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorStraw"]/renderPrecedence</xpath>                <value><renderPrecedence>254</renderPrecedence></value></li>
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "BurnedStrawFloor"]</xpath>                           <value><renderPrecedence>255</renderPrecedence></value></li>
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "FloorStraw"]</xpath>                                 <value><renderPrecedence>254</renderPrecedence></value></li>
 
         <!-- change edgeType to Hard to match the new look -->
-        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodBarn"]/edgeType</xpath><value><edgeType>Hard</edgeType></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "FloorWoodBarn"]/edgeType</xpath>                 <value><edgeType>Hard</edgeType></value></li>
 
       </operations>
     </match>
