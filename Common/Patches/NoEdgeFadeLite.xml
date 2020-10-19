@@ -295,4 +295,21 @@
     </match>
   </Operation>
 
+  <!-- ========== Patch for zilla.tilledsoil ========== -->
+  <!-- ========== May also affect other Tilled Soil mods ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Tilled Soil</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "TilledSoil"]/renderPrecedence</xpath>             <value><renderPrecedence>235</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Dirt"]/renderPrecedence</xpath>                   <value><renderPrecedence>235</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>
