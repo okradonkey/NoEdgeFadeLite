@@ -56,6 +56,24 @@
       </operations>
   </Operation>
 
+  <!-- ========== Patch for Royalty ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "FineTileStoneBase"]/renderPrecedence</xpath>         <value><renderPrecedence>360</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetFineBurgundy"]/renderPrecedence</xpath>      <value><renderPrecedence>340</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetFineIndigo"]/renderPrecedence</xpath>        <value><renderPrecedence>339</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "CarpetFineWhite"]/renderPrecedence</xpath>         <value><renderPrecedence>338</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
   <!-- ========== Patch for the original [RF] Fertile Fields [1.0] ========== -->
   <Operation Class="PatchOperationFindMod">
     <mods>
