@@ -330,4 +330,43 @@
     </match>
   </Operation>
 
+  <!-- ========== Patch for Dubwise.Rimefeller ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Rimefeller</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "RimefellerLinoBase"]/renderPrecedence</xpath>        <value><renderPrecedence>360</renderPrecedence></value></li>
+
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "Lino_Red"]</xpath>                                     <value><renderPrecedence>340</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_Green"]/renderPrecedence</xpath>              <value><renderPrecedence>339</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_Blue"]/renderPrecedence</xpath>               <value><renderPrecedence>338</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_White"]/renderPrecedence</xpath>              <value><renderPrecedence>337</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_Dark"]/renderPrecedence</xpath>               <value><renderPrecedence>336</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_Gold"]/renderPrecedence</xpath>               <value><renderPrecedence>335</renderPrecedence></value></li>
+
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "LinoTile_Red"]</xpath>                                 <value><renderPrecedence>340</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "LinoTile_Green"]/renderPrecedence</xpath>          <value><renderPrecedence>339</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "LinoTile_Blue"]/renderPrecedence</xpath>           <value><renderPrecedence>338</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "LinoTile_White"]/renderPrecedence</xpath>          <value><renderPrecedence>337</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "LinoTile_Dark"]/renderPrecedence</xpath>           <value><renderPrecedence>336</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "LinoTile_Gold"]/renderPrecedence</xpath>           <value><renderPrecedence>335</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Wood_ParquetHerring"]/renderPrecedence</xpath>     <value><renderPrecedence>390</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Wood_ParquetVersailles"]/renderPrecedence</xpath>  <value><renderPrecedence>390</renderPrecedence></value></li>
+
+        <li Class="PatchOperationAdd"><xpath>Defs/TerrainDef[defName = "Lino_MosaicRed"]</xpath>                               <value><renderPrecedence>340</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_MosaicGreen"]/renderPrecedence</xpath>        <value><renderPrecedence>339</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_MosaicBlue"]/renderPrecedence</xpath>         <value><renderPrecedence>338</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_MosaicCream"]/renderPrecedence</xpath>        <value><renderPrecedence>337</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_MosaicDark"]/renderPrecedence</xpath>         <value><renderPrecedence>336</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "Lino_MosaicGold"]/renderPrecedence</xpath>         <value><renderPrecedence>335</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>

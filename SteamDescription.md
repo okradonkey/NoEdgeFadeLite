@@ -24,8 +24,9 @@ Please feel free to make a compatibility request for any mods you like.
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543195051]Floored - Yellow and Striped Tiles Only [1.0+][/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2008833499]Natural Paths[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700]Project RimFactory Revived[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1321849735]Rimefeller[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=853043503]Stuffed Floors[/url]
-- Tilled Soil (several versions)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2039531414]Tilled Soil[/url] (and similar versions)
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007063961]VGP Garden Tools[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=893156099][FSF] Carpets of the Rainbow[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539311500][RF] Fertile Fields [1.0][/url]
