@@ -369,4 +369,172 @@
     </match>
   </Operation>
 
+  <!-- ========== Patch for Wemd.ExpandedFloors ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[WD] Expanded Floors</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <!-- Burned -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDBurnedWidePlanks" or
+          defName = "WDBurnedCheckWoodenFloor" or
+          defName = "WDBurnedParquet" or
+          defName = "WDBurnedMosaicWoodenFloor" or
+          defName = "WDBurnedPlywoodFloor" or
+          defName = "WDBurnedStrawFloor"
+          ]/renderPrecedence</xpath><value><renderPrecedence>391</renderPrecedence></value></li>
+
+        <!-- Carpets -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "CarpetCream" or
+          defName = "WDCarpetYellow" or
+          defName = "WDCarpetOrange" or
+          defName = "WDCarpetBrown" or
+          defName = "WDCarpetPink" or
+          defName = "CarpetRed" or
+          defName = "WDCarpetIndigo" or
+          defName = "WDCarpetPurple" or
+          defName = "CarpetBlue" or
+          defName = "WDCarpetSkyBlue" or
+          defName = "WDCarpetLightGreen" or
+          defName = "CarpetGreen" or
+          defName = "WDCarpetWhite" or
+          defName = "WDCarpetGrey" or
+          defName = "CarpetDark" or
+          defName = "WDCarpetBlack"
+          ]/renderPrecedence</xpath><value><renderPrecedence>339</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDCarpetCreamCheckSimple" or
+          defName = "WDkCarpetYellowChecSimple" or
+          defName = "WDCarpetOrangeCheckSimple" or
+          defName = "WDCarpetBrownCheckSimple" or
+          defName = "WDCarpetPinkCheckSimple" or
+          defName = "WDCarpetRedCheckSimple" or
+          defName = "WDCarpetIndigoCheckSimple" or
+          defName = "WDCarpetPurpleCheckSimple" or
+          defName = "WDCarpetBlueCheckSimple" or
+          defName = "WDCarpetSkyBlueCheckSimple" or
+          defName = "WDCarpetLightGreenCheckSimple" or
+          defName = "WDCarpetGreenCheckSimple" or
+          defName = "WDCarpetWhiteCheckSimple" or
+          defName = "WDCarpetGreyCheckSimple" or
+          defName = "WDCarpetDarkCheckSimple" or
+          defName = "WDCarpetBlackCheckSimple"
+          ]/renderPrecedence</xpath><value><renderPrecedence>339</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDCheckCarpetCream" or
+          defName = "WDCheckCarpetYellow" or
+          defName = "WDCheckCarpetOrange" or
+          defName = "WDCheckCarpetBrown" or
+          defName = "WDCheckCarpetPink" or
+          defName = "WDCheckCarpetRed" or
+          defName = "WDCheckCarpetIndigo" or
+          defName = "WDCheckCarpetPurple" or
+          defName = "WDCheckCarpetBlue" or
+          defName = "WDCheckCarpetSkyBlue" or
+          defName = "WDCheckCarpetLightGreen" or
+          defName = "WDCheckCarpetGreen" or
+          defName = "WDCheckCarpetWhite" or
+          defName = "WDCheckCarpetGrey" or
+          defName = "WDCheckCarpetDark" or
+          defName = "WDCheckCarpetBlack"
+          ]/renderPrecedence</xpath><value><renderPrecedence>339</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDCarpetFineCream" or
+          defName = "WDCarpetFineYellow" or
+          defName = "WDCarpetFineOrange" or
+          defName = "WDCarpetFineBrown" or
+          defName = "WDCarpetFinePink" or
+          defName = "CarpetFineBurgundy" or
+          defName = "CarpetFineIndigo" or
+          defName = "WDCarpetFinePurple" or
+          defName = "WDCarpetFineBlue" or
+          defName = "WDCarpetFineSkyBlue" or
+          defName = "WDCarpetFineLightGreen" or
+          defName = "WDCarpetFineGreen" or
+          defName = "CarpetFineWhite" or
+          defName = "WDCarpetFineGrey" or
+          defName = "WDCarpetFineDark" or
+          defName = "WDCarpetFineBlack"
+          ]/renderPrecedence</xpath><value><renderPrecedence>339</renderPrecedence></value></li>
+
+        <!-- Jade -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[@Name = "WDJadeFloorBase"]/renderPrecedence</xpath>        <value><renderPrecedence>360</renderPrecedence></value></li>
+
+        <!-- Metal -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "Concrete" or
+          defName = "PavedTile" or
+          defName = "WDMetalSheets" or
+          defName = "WDStripedMetalTile" or
+          defName = "WDPatternedMetalTile"
+          ]/renderPrecedence</xpath><value><renderPrecedence>370</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "MetalTile" or
+          defName = "WDMetalCheckTile" or
+          defName = "WDHexMetalFloor"
+          ]/renderPrecedence</xpath><value><renderPrecedence>380</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "SilverTile" or
+          defName = "WDSilverCheckTile" or
+          defName = "WDSilverTileHex"
+          ]/renderPrecedence</xpath><value><renderPrecedence>381</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "GoldTile" or
+          defName = "WDGoldCheckTile" or
+          defName = "WDGodlTileHex"
+          ]/renderPrecedence</xpath><value><renderPrecedence>382</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDPlasteelTile" or
+          defName = "WDPlasteelCheckTile" or
+          defName = "WDPlasteelTileHex"
+          ]/renderPrecedence</xpath><value><renderPrecedence>384</renderPrecedence></value></li>
+
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "SterileTile" or
+          defName = "WDCheckSterileTile" or
+          defName = "WDHexSterileTile"
+          ]/renderPrecedence</xpath><value><renderPrecedence>383</renderPrecedence></value></li>
+
+        <!-- Misc -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WDStrawFloor"]/renderPrecedence</xpath>                <value><renderPrecedence>254</renderPrecedence></value></li>
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[defName = "WDPackedDirtFloor"]/renderPrecedence</xpath>           <value><renderPrecedence>260</renderPrecedence></value></li>
+
+        <!-- Stone -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          @Name = "WDRoughStoneTileBase" or
+          @Name = "WDStoneTileBase" or
+          @Name = "WDCheckStoneTileBase" or
+          @Name = "WDCheckStoneFloorBase" or
+          @Name = "WDMosaicStoneFloorBase" or
+          @Name = "WDPolishedStoneFloorBase" or
+          @Name = "WDStonePlateFloorBase"
+          ]/renderPrecedence</xpath><value><renderPrecedence>360</renderPrecedence></value></li>
+
+        <!-- Wood -->
+        <li Class="PatchOperationReplace"><xpath>Defs/TerrainDef[
+          defName = "WDPlywoodFloor" or
+          defName = "WoodPlankFloor" or
+          defName = "WDWidePlanksFloor" or
+          defName = "WDCheckWoodenFloor" or
+          defName = "WDParquet" or
+          defName = "WDMosaicWoodenFloor"
+          ]/renderPrecedence</xpath><value><renderPrecedence>390</renderPrecedence></value></li>
+
+      </operations>
+    </match>
+  </Operation>
+
+
 </Patch>

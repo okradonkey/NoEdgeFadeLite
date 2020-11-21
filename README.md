@@ -34,6 +34,7 @@ Please feel free to make a compatibility request for any mods you like.
 - [FSF] Carpets of the Rainbow
 - [RF] Fertile Fields [1.0]
 - [T] MoreFloors
+- [WD] Expanded Floors
 
 ### Known Issues
 Rough, hewn, and smooth stone floors are hard-coded and can't be

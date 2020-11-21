@@ -30,7 +30,8 @@ Please feel free to make a compatibility request for any mods you like.
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007063961]VGP Garden Tools[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=893156099][FSF] Carpets of the Rainbow[/url]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539311500][RF] Fertile Fields [1.0][/url]
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543561093][T] MoreFloors[/url] 
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543561093][T] MoreFloors[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1817862464][WD] Expanded Floors[/url]
 
 [h1]Known Issues[/h1]
 Rough, hewn, and smooth stone floors are hard-coded and can't be
