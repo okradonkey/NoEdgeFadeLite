@@ -9,7 +9,7 @@ If you want ALL terrain borders (except natural shorelines) to be crisp,
 check out the original No Edge Fade mod.
 
 ### Compatibility
-- Compatible with RimWorld **v1.0**, **v1.1**, and the **Royalty** DLC.
+- Compatible with RimWorld **v1.0**, **v1.1**, **v1.2**, and the **Royalty** DLC.
 - No game-breaking incompatibilities, **BUT...**
 
 This mod drastically re-orders the rendering precedence of terrains.
@@ -27,11 +27,14 @@ Please feel free to make a compatibility request for any mods you like.
 - Floored - Yellow and Striped Tiles Only [1.0+]
 - Natural Paths
 - Project RimFactory Revived
+- Rimefeller
 - Stuffed Floors
+- Tilled Soil (several versions)
 - VGP Garden Tools
 - [FSF] Carpets of the Rainbow
 - [RF] Fertile Fields [1.0]
 - [T] MoreFloors
+- [WD] Expanded Floors
 
 ### Known Issues
 Rough, hewn, and smooth stone floors are hard-coded and can't be
